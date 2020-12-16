@@ -3,7 +3,6 @@
 One can see that the input image has lines flowing across it and these are due to the presence of periodic noise in the image. These periodic noises can be removed using a band reject or notch filters to filter out the specific range of frequencies that can filter out these periodic noises. 
 
 \
-
 The image is first converted into the frequency domain using FFT and then shifted to center the DC component of the image. Various band reject filters and notch filters were implemented as per their formulae and various values of the input parameters were experimented with. A desired kernel can be applied in the frequency domain by simply multiplying with the frequency transformed image. Once this is done, the image is converted back to time domain by performing inverse FFT and Inverse shifting. The image is then displayed. 
 
 \
